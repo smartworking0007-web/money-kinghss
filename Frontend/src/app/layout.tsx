@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 const lexend = Lexend({ 
   subsets: ["latin"],
@@ -25,11 +26,11 @@ export default function RootLayout({
       <body className={`${lexend.variable} antialiased bg-white`}>
         {/* Navbar and SecondNavbar must be ABOVE the content */}
         <Navbar />
-
         {/* Hero starts here – give space so it's not hidden under navbars */}
         <main className="pt-10 lg:pt-15">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

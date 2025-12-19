@@ -7,7 +7,7 @@ export type HeroSlide = {
 export const heroSlides: HeroSlide[] = [
   {
     id: 1,
-    imageUrl: "/images/Frame1.png",
+    imageUrl: "/images/Frame3.png",
     imageAlt: "Digital Marketing",
   },
   {
